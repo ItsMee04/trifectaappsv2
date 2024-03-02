@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfessionController;
 use Illuminate\Support\Facades\Route;
@@ -23,4 +24,5 @@ Route::get('/', function () {
 Route::get('dashboard', [DashboardController::class, 'index']);
 
 Route::get('profession', [ProfessionController::class, 'index']);
-Route::get('profession-post',[ProfessionController::class, 'professionPost']);
+
+Route::get('categories',[CategoriesController::class, 'index']);
