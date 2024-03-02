@@ -20,7 +20,7 @@
                                 <li><a href="/profession" class="">Profession</a></li>
                                 <li><a href="/categories" class="">Categories</a>
                                 </li>
-                                <li><a href="/typeproduct" class="">Type
+                                <li><a href="/type" class="">Type
                                         Product</a>
                                 </li>
                                 <li><a href="/role" class="">Access
@@ -164,7 +164,7 @@
                             <li><a href="/profession" class="">Profession</a></li>
                             <li><a href="/categories" class="">Categories</a>
                             </li>
-                            <li><a href="/typeproduct" class="">Type
+                            <li><a href="/type" class="">Type
                                     Product</a>
                             </li>
                             <li><a href="/role" class="">Access
@@ -281,7 +281,7 @@
                             <li><a href="/profession" class="">Profession</a></li>
                             <li><a href="/categories" class="">Categories</a>
                             </li>
-                            <li><a href="/typeproduct" class="">Type
+                            <li><a href="/type" class="">Type
                                     Product</a>
                             </li>
                             <li><a href="/role" class="">Access
