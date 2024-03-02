@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfessionController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TypeController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +30,5 @@ Route::get('profession', [ProfessionController::class, 'index']);
 Route::get('categories',[CategoriesController::class, 'index']);
 
 Route::get('type',[TypeController::class, 'index']);
+
+Route::get('role',[RoleController::class, 'index']);
