@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::get('dashboard', [DashboardController::class, 'index']);
 
 Route::get('profession', [ProfessionController::class, 'index']);
+Route::get('profession-post',[ProfessionController::class, 'professionPost']);

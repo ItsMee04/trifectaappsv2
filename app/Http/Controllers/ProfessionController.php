@@ -10,4 +10,9 @@ class ProfessionController extends Controller
     {
         return view('admin.profession');
     }
+
+    public function professionPost()
+    {
+        return view('admin.post.profession-post');
+    }
 }

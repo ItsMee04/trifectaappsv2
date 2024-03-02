@@ -3,11 +3,12 @@
 @section('content')
     <div class="page-wrapper">
         <div class="content">
+
             <div class="page-header">
                 <div class="add-item d-flex">
                     <div class="page-title">
-                        <h4>Product List</h4>
-                        <h6>Manage your products</h6>
+                        <h4>Profession</h4>
+                        <h6>Manage your profession</h6>
                     </div>
                 </div>
                 <ul class="table-top-head">
@@ -33,13 +34,9 @@
                     </li>
                 </ul>
                 <div class="page-btn">
-                    <a href="add-product.html" class="btn btn-added"><i data-feather="plus-circle" class="me-2"></i>Add
-                        New Product</a>
-                </div>
-                <div class="page-btn import">
-                    <a href="#" class="btn btn-added color" data-bs-toggle="modal" data-bs-target="#view-notes"><i
-                            data-feather="download" class="me-2"></i>Import
-                        Product</a>
+                    <a href="#" class="btn btn-added" data-bs-toggle="modal" data-bs-target="#add-profession"><i
+                            data-feather="plus-circle" class="me-2"></i>Add
+                        New Profession</a>
                 </div>
             </div>
 
@@ -48,8 +45,7 @@
                     <div class="table-top">
                         <div class="search-set">
                             <div class="search-input">
-                                <a href="javascript:void(0);" class="btn btn-searchset"><i data-feather="search"
-                                        class="feather-search"></i></a>
+                                <a href="javascript:void(0);" class="btn btn-searchset"></a>
                             </div>
                         </div>
                         <div class="search-path">
@@ -75,9 +71,9 @@
                                     <div class="row">
                                         <div class="col-lg-2 col-sm-6 col-12">
                                             <div class="input-blocks">
-                                                <i data-feather="box" class="info-img"></i>
+                                                <i data-feather="server" class="info-img"></i>
                                                 <select class="select">
-                                                    <option>Choose Product</option>
+                                                    <option>Choose Profession</option>
                                                     <option>
                                                         Lenovo 3rd Generation</option>
                                                     <option>Nike Jordan</option>
@@ -86,48 +82,12 @@
                                         </div>
                                         <div class="col-lg-2 col-sm-6 col-12">
                                             <div class="input-blocks">
-                                                <i data-feather="stop-circle" class="info-img"></i>
+                                                <i data-feather="server" class="info-img"></i>
                                                 <select class="select">
-                                                    <option>Choose Categroy</option>
+                                                    <option>Choose Status</option>
                                                     <option>Laptop</option>
                                                     <option>Shoe</option>
                                                 </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-sm-6 col-12">
-                                            <div class="input-blocks">
-                                                <i data-feather="git-merge" class="info-img"></i>
-                                                <select class="select">
-                                                    <option>Choose Sub Category</option>
-                                                    <option>Computers</option>
-                                                    <option>Fruits</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-sm-6 col-12">
-                                            <div class="input-blocks">
-                                                <i data-feather="stop-circle" class="info-img"></i>
-                                                <select class="select">
-                                                    <option>All Brand</option>
-                                                    <option>Lenovo</option>
-                                                    <option>Nike</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-sm-6 col-12">
-                                            <div class="input-blocks">
-                                                <i class="fas fa-money-bill info-img"></i>
-                                                <select class="select">
-                                                    <option>Price</option>
-                                                    <option>$12500.00</option>
-                                                    <option>$12500.00</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-sm-6 col-12">
-                                            <div class="input-blocks">
-                                                <a class="btn btn-filters ms-auto"> <i data-feather="search"
-                                                        class="feather-search"></i> Search </a>
                                             </div>
                                         </div>
                                     </div>
@@ -140,446 +100,23 @@
                         <table class="table datanew">
                             <thead>
                                 <tr>
-                                    <th class="no-sort">
-                                        <label class="checkboxs">
-                                            <input type="checkbox" id="select-all">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </th>
-                                    <th>Product</th>
-                                    <th>SKU</th>
-                                    <th>Category</th>
-                                    <th>Brand</th>
-                                    <th>Price</th>
-                                    <th>Unit</th>
-                                    <th>Qty</th>
-                                    <th>Created by</th>
+                                    <th>No.</th>
+                                    <th>Profession</th>
+                                    <th>Status</th>
                                     <th class="no-sort">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/stock-img-01.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Lenovo 3rd Generation </a>
-                                        </div>
-                                    </td>
+                                    <td>{{ 1 }} </td>
                                     <td>PT001 </td>
-                                    <td>Laptop</td>
-                                    <td>Lenovo</td>
-                                    <td>$12500.00</td>
-                                    <td>Pc</td>
-                                    <td>100</td>
                                     <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-30.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Arroon</a>
-                                        </div>
+                                        <span class="badge badge-linesuccess">Active</span>
                                     </td>
                                     <td class="action-table-data">
                                         <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon  p-2" href="product-details.html">
-                                                <i data-feather="eye" class="feather-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/stock-img-06.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Bold V3.2</a>
-                                        </div>
-                                    </td>
-                                    <td>PT002</td>
-                                    <td>Electronics</td>
-                                    <td>Bolt</td>
-                                    <td>$1600.00</td>
-                                    <td>Pc</td>
-                                    <td>140</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-13.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Kenneth</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/stock-img-02.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Nike Jordan</a>
-                                        </div>
-                                    </td>
-                                    <td>PT003</td>
-                                    <td>Shoe</td>
-                                    <td>Nike</td>
-                                    <td>$6000.00</td>
-                                    <td>Pc</td>
-                                    <td>780</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-11.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Gooch</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/stock-img-03.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Apple Series 5 Watch</a>
-                                        </div>
-                                    </td>
-                                    <td>PT004</td>
-                                    <td>Electronics</td>
-                                    <td>Apple</td>
-                                    <td>$25000.00</td>
-                                    <td>Pc</td>
-                                    <td>450</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-03.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Nathan</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/stock-img-04.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Amazon Echo Dot</a>
-                                        </div>
-                                    </td>
-                                    <td>PT005</td>
-                                    <td>Speaker</td>
-                                    <td>Amazon</td>
-                                    <td>$1600.00</td>
-                                    <td>Pc</td>
-                                    <td>477</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-02.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Alice</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/stock-img-05.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Lobar Handy</a>
-                                        </div>
-                                    </td>
-                                    <td>PT006</td>
-                                    <td>Furnitures</td>
-                                    <td>Woodmart</td>
-                                    <td>$4521.00</td>
-                                    <td>Kg</td>
-                                    <td>145</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-05.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Robb</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/expire-product-01.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Red Premium Handy</a>
-                                        </div>
-                                    </td>
-                                    <td>PT007</td>
-                                    <td>Bags</td>
-                                    <td>Versace</td>
-                                    <td>$2024.00</td>
-                                    <td>Kg</td>
-                                    <td>747</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-08.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Steven</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/expire-product-02.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Iphone 14 Pro</a>
-                                        </div>
-                                    </td>
-                                    <td>PT008</td>
-                                    <td>Phone</td>
-                                    <td>Iphone</td>
-                                    <td>$1698.00</td>
-                                    <td>Pc</td>
-                                    <td>897</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-04.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Gravely</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/expire-product-03.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Black Slim 200</a>
-                                        </div>
-                                    </td>
-                                    <td>PT009</td>
-                                    <td>Chairs</td>
-                                    <td>Bently</td>
-                                    <td>$6794.00</td>
-                                    <td>Pc</td>
-                                    <td>741</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-01.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Kevin</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
-                                                <i data-feather="edit" class="feather-edit"></i>
-                                            </a>
-                                            <a class="confirm-text p-2" href="javascript:void(0);">
-                                                <i data-feather="trash-2" class="feather-trash-2"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label class="checkboxs">
-                                            <input type="checkbox">
-                                            <span class="checkmarks"></span>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <div class="productimgname">
-                                            <a href="javascript:void(0);" class="product-img stock-img">
-                                                <img src="assets/img/products/expire-product-04.png" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Woodcraft Sandal</a>
-                                        </div>
-                                    </td>
-                                    <td>PT010</td>
-                                    <td>Bags</td>
-                                    <td>Woodcraft</td>
-                                    <td>$4547.00</td>
-                                    <td>Kg</td>
-                                    <td>148</td>
-                                    <td>
-                                        <div class="userimgname">
-                                            <a href="javascript:void(0);" class="product-img">
-                                                <img src="assets/img/users/user-10.jpg" alt="product">
-                                            </a>
-                                            <a href="javascript:void(0);">Grillo</a>
-                                        </div>
-                                    </td>
-                                    <td class="action-table-data">
-                                        <div class="edit-delete-action">
-                                            <a class="me-2 edit-icon p-2" href="product-details.html">
-                                                <i data-feather="eye" class="action-eye"></i>
-                                            </a>
-                                            <a class="me-2 p-2" href="edit-product.html">
+                                            <a class="me-2 p-2" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#edit-profession">
                                                 <i data-feather="edit" class="feather-edit"></i>
                                             </a>
                                             <a class="confirm-text p-2" href="javascript:void(0);">
@@ -593,7 +130,90 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
+
+    <div class="modal fade" id="add-profession">
+        <div class="modal-dialog modal-dialog-centered custom-modal-two">
+            <div class="modal-content">
+                <div class="page-wrapper-new p-0">
+                    <div class="content">
+                        <div class="modal-header border-0 custom-modal-header">
+                            <div class="page-title">
+                                <h4>Create Profession</h4>
+                            </div>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body custom-modal-body">
+                            <form action="profession" method="POST">
+                                <div class="mb-3">
+                                    <label class="form-label">Profession</label>
+                                    <input type="text" class="form-control" name="profession" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Status</label>
+                                    <select class="select form-control" name="status">
+                                        <option value="1">AKTIF</option>
+                                        <option value="2">NON AKTIF</option>
+                                    </select>
+                                </div>
+                                <div class="modal-footer-btn">
+                                    <button type="button" class="btn btn-cancel me-2"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-submit">Create Category</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-profession">
+        <div class="modal-dialog modal-dialog-centered custom-modal-two">
+            <div class="modal-content">
+                <div class="page-wrapper-new p-0">
+                    <div class="content">
+                        <div class="modal-header border-0 custom-modal-header">
+                            <div class="page-title">
+                                <h4>Edit Category</h4>
+                            </div>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body custom-modal-body">
+                            <form action="category-list.html">
+                                <div class="mb-3">
+                                    <label class="form-label">Category</label>
+                                    <input type="text" class="form-control" value="Laptop">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Category Slug</label>
+                                    <input type="text" class="form-control" value="laptop">
+                                </div>
+                                <div class="mb-0">
+                                    <div
+                                        class="status-toggle modal-status d-flex justify-content-between align-items-center">
+                                        <span class="status-label">Status</span>
+                                        <input type="checkbox" id="user3" class="check" checked>
+                                        <label for="user3" class="checktoggle"></label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer-btn">
+                                    <button type="button" class="btn btn-cancel me-2"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-submit">Save Changes</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

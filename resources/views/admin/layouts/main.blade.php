@@ -11,17 +11,17 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>Trifecta Apps - @yield('title')</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets') }}/img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets') }}/img/favicon.png">
 
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/bootstrap-datetimepicker.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/animate.css" />
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/animate.css">
 
     <link rel="stylesheet" href="{{ asset('assets') }}/css/feather.css">
 
-    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/select2/css/select2.min.css">
 
     <link rel="stylesheet" href="{{ asset('assets') }}/plugins/summernote/summernote-bs4.min.css">
 
@@ -29,10 +29,10 @@
 
     <link rel="stylesheet" href="{{ asset('assets') }}/css/dataTables.bootstrap5.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/fontawesome/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/fontawesome/css/all.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css" />
+    <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
 </head>
 
 <body>
@@ -60,65 +60,36 @@
         </div>
     </div>
 
-    <script
-      src="{{asset('assets')}}/js/jquery-3.7.1.min.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
+    <script src="{{ asset('assets') }}/js/jquery-3.7.1.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script
-      src="{{asset('assets')}}/js/feather.min.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
+    <script src="{{ asset('assets') }}/js/feather.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script
-      src="{{asset('assets')}}/js/jquery.slimscroll.min.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
+    <script src="{{ asset('assets') }}/js/jquery.slimscroll.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script src="{{asset('assets')}}/js/jquery.dataTables.min.js" type="b65b9253e44b2c70162fe8cb-text/javascript"></script>
-    <script src="{{asset('assets')}}/js/dataTables.bootstrap5.min.js" type="b65b9253e44b2c70162fe8cb-text/javascript"></script>
+    <script src="{{ asset('assets') }}/js/jquery.dataTables.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
+    <script src="{{ asset('assets') }}/js/dataTables.bootstrap5.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script
-      src="{{asset('assets')}}/js/bootstrap.bundle.min.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
+    <script src="{{ asset('assets') }}/js/bootstrap.bundle.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script src="{{asset('assets')}}/plugins/summernote/summernote-bs4.min.js" type="b65b9253e44b2c70162fe8cb-text/javascript"></script>
+    <script src="{{ asset('assets') }}/plugins/summernote/summernote-bs4.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script src="{{asset('assets')}}/plugins/select2/js/select2.min.js" type="b65b9253e44b2c70162fe8cb-text/javascript"></script>
+    <script src="{{ asset('assets') }}/plugins/select2/js/select2.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script src="{{asset('assets')}}/js/moment.min.js" type="b65b9253e44b2c70162fe8cb-text/javascript"></script>
-    <script src="{{asset('assets')}}/js/bootstrap-datetimepicker.min.js" type="b65b9253e44b2c70162fe8cb-text/javascript"></script>
+    <script src="{{ asset('assets') }}/js/moment.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
+    <script src="{{ asset('assets') }}/js/bootstrap-datetimepicker.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script src="{{asset('assets')}}/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js" type="b65b9253e44b2c70162fe8cb-text/javascript"></script>
+    <script src="{{ asset('assets') }}/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script
-      src="{{asset('assets')}}/plugins/apexchart/apexcharts.min.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
-    <script
-      src="{{asset('assets')}}/plugins/apexchart/chart-data.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
+    <script src="{{ asset('assets') }}/plugins/apexchart/apexcharts.min.js" type="05c0c8b0d03649929ffbc26e-text/javascript"></script>
+    <script src="{{ asset('assets') }}/plugins/apexchart/chart-data.js" type="05c0c8b0d03649929ffbc26e-text/javascript"></script>
 
-    <script
-      src="{{asset('assets')}}/plugins/sweetalert/sweetalert2.all.min.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
-    <script
-      src="{{asset('assets')}}/plugins/sweetalert/sweetalerts.min.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
+    <script src="{{ asset('assets') }}/plugins/sweetalert/sweetalert2.all.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
+    <script src="{{ asset('assets') }}/plugins/sweetalert/sweetalerts.min.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
 
-    <script
-      src="{{asset('assets')}}/js/theme-script.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
-    <script
-      src="{{asset('assets')}}/js/script.js"
-      type="fa0972c5f9f76a4cecc29643-text/javascript"
-    ></script>
-    <script src="{{ asset('assets') }}/js/rocket-loader.min.js" data-cf-settings="fa0972c5f9f76a4cecc29643-|49" defer>
+    <script src="{{ asset('assets') }}/js/theme-script.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
+    <script src="{{ asset('assets') }}/js/script.js" type="8314fc5805535ec03a8f658f-text/javascript"></script>
+
+    <script src="{{ asset('assets') }}/js/rocket-loader.min.js" data-cf-settings="8314fc5805535ec03a8f658f-|49" defer>
     </script>
 </body>
 
